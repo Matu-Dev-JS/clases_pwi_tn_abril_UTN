@@ -26,3 +26,7 @@ Listo, con esto tenemos nuestro repo en github con lo que hayamos subido
 **Podemos usar git status para obtener una informacion detallada del estado de nuestro repo**
 
     *git status
+
+**Para ver que origen remoto tengo**
+
+    *git remote -v
