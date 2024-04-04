@@ -11,7 +11,7 @@
 
 Listo, con esto tenemos nuestro repo en github con lo que hayamos subido
 
-# Si estoy actualizando:
+# Si estoy actualizando: despues de hacer ctrol + s (obviamente)
 
     *git add .
     *git commit -m 'comentario'
