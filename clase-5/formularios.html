@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <h1>Form</h1>
+    <form>
+        <div>
+            <label for="username" >Ingresa tu nombre de usuario:</label>
+            <input type="text" name="username" id="username" placeholder="Jonh Doe" required maxlength="30" minlength="2">
+            <span style="color: red;">No has ingresado un dato valido</span>
+        </div>
+        <div>
+            <label for="password">Ingrese su contraseña</label>
+            <input type="password" name="contrasena" id="password">
+        </div>
+        <div>
+            <label for="password">Ingrese su Email:</label>
+            <input type="email" name="email" id="email">
+        </div>
+        <div>
+            <label for="pais">Selecciona un pais:</label>
+            <select name="pais" id="pais">
+                <option value="AR" >Argentina 😎</option>
+                <option value="FR">Fracia</option>
+                <option value="NO" selected disabled>No seleccionado</option>
+            </select>
+        </div>
+        <div>
+            <label for="pais-1">Seleccione un pais
+                <span>Argentina</span><input type="radio" name="pais-1" id="ar">
+                <span>Francia</span><input type="radio" name="pais-1" id="fr">
+            </label>
+        </div>
+        <div>
+            <label for="mensaje">Ingrese su mensaje:</label>
+            <textarea name="mensaje" id="mensaje" cols="30" rows="10" placeholder="Hola a todos!"></textarea>
+        </div>
+        <div>
+            <input type="submit" value="Confirmar">
+            <button type="submit">Enviar</button>
+        </div>
+    </form>
+</body>
+</html>
