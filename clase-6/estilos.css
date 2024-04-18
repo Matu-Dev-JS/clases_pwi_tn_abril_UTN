@@ -1,0 +1,33 @@
+@import url('./index.css');
+
+body{/* Selector de elementos */
+
+}
+
+h2{
+    color: rgb(170, 0, 255);
+    font-size: 50px;
+}
+
+.subtitulo-especial{
+    color: green;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+*{/* Selector universal */
+    font-family: sans-serif !important;
+    
+}
+
+.subtitulo-especial{
+    color: yellow;
+}
+
+#super-especial{
+    color: blue;
+}
+
+.super-especial{
+    color: red;
+    font-family: 'Times New Roman', Times, serif !important;
+}
