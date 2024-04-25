@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+}
+
+/* Color card style: */
+
+.colors-cards{
+    display: flex;
+    gap: 20px;
+    /* 
+    anchos de caja, 
+    gaps
+    los padding
+    */
+    width: calc(250px * 4 + 20px * 3 + 20px * 2 );
+    padding: 0 20px;
+    flex-wrap: wrap;
+
+}
+
+.color-card{
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    gap: 15px;
+}
+
+.color-card .colors{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 250px;
+    background-color: aqua;
+    border-radius: 15px;
+    overflow: hidden;
+}   
+
+.color-card .colors .color:nth-child(1){
+    height: 40%;
+}
+
+.color-card .colors .color:nth-child(2){
+    height: 30%;
+}
+
+.color-card .colors .color:nth-child(3){
+    height: 17%;
+}
+
+.color-card .colors .color:nth-child(4){
+    height: 13%;
+}
+
+
+.color-card .color-card-controls{
+    display: flex;
+    flex-direction: row; /* este viene por default */
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.color-card .color-card-controls .btn-like{
+    height: 40px;
+    padding: 0px 14px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    background-color: white;
+    border: 1px solid rgba(0, 0, 0, 0.132);
+    border-radius: 10px;
+    gap: 5px;
+    box-shadow: none;
+}
+
+.color-card .color-card-controls .time{
+    color: #9D9D9D;
+    font-size: 14px;
+}
+
+/* Color card styles (END) */

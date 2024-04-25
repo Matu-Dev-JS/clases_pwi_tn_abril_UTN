@@ -1,0 +1,87 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+
+
+/* Variable */
+:root{
+    --color-texto: #3A3C3B;
+    --fuente-principal:  "DM Sans", sans-serif;
+}
+
+*{
+    font-family: var(--fuente-principal);
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+
+/* header */
+
+
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0px 30px;
+    height: 70px;
+    align-items: center;
+}
+
+.logo-container{
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+}
+
+.logo-container .logo{
+    width: 140px;
+}
+
+.logo-container .selector-lenguaje{
+
+    display: flex;
+    align-items: center;
+    gap: 10px
+}
+
+.logo-container .selector-lenguaje .pais{
+    width: 35px;
+}
+
+.logo-container .selector-lenguaje .lenguaje{
+
+}
+
+
+header nav{
+
+}
+
+nav .links-container{
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    gap: 20px
+}
+
+nav .links-container .link-item{
+    display: flex;
+    flex-direction: row;
+    height: 50px;
+
+    align-items: center;
+}
+
+nav .links-container .link-item .link{
+    text-decoration: none;
+    color: var(--color-texto)
+}
+
+nav .links-container .link-item .btn-link{
+    border: 2px solid var(--color-texto);
+    padding: 10px;
+    border-radius: 5px;
+
+}
