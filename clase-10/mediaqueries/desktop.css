@@ -1,0 +1,100 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* DESKTOP FIRST */
+
+html{
+    font-size: 16px;
+}
+/* 
+1rem equivale a el font-size del html
+*/
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    align-items: center;
+}
+
+header h2{
+    font-size: 2.5rem;
+}
+
+nav{
+    display: flex;
+    gap: 15px;
+}
+
+.link{
+    font-size: 1.2rem;
+}
+
+header button{
+    display: none;
+}
+
+.producto{
+    font-size: 10px;
+}
+
+/* Em equivale al font size del padre mas cercano */
+p{
+    font-size: 1em;
+}
+
+
+@media screen and (max-width: 830px) {
+/*     header h2{
+        font-size: 30px;
+    } */
+
+    html{
+        font-size: 14px;
+    }
+    header button{
+        display: flex;
+    }
+
+    nav{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 530px) {
+    html{
+        font-size: 12px;
+    }
+/*     header h2{
+        font-size: 25px;
+    } */
+
+}
+
+/* 
+MOBIBLE FIRST
+nav{
+    display: none;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    align-items: center;
+}
+
+
+@media screen and (min-width: 830px) {
+    nav{
+        display: flex;
+        gap: 15px;
+    }
+    header  button{
+        display: none;
+    }
+} */
