@@ -135,3 +135,91 @@ Escribe un condicional que verifique si una variable llamada "edad" es mayor o i
 
 
 */
+
+
+/* 
+OPCIONAL:
+
+16.De un empleado se sabe su sueldo y los años de antigüedad. el sector de contabilidad nos pide hacer un programa que lea los datos y nos muestre.
+
+1)	Si el sueldo es inferior a 500 y su antigüedad es igual o superior a 10 años, otorgarle un aumento del 20 %, mostrar el sueldo a pagar.
+
+2)	Si el sueldo es inferior a 500 pero su antigüedad es menor a 10 años, otorgarle un aumento de 5 %.
+
+3)	Si el sueldo es mayor o igual a 500 mostrar el sueldo en la página sin cambios. 
+
+
+*/
+
+/* SOLUCIONES:
+
+Ejercicio 1
+let tieneHijos = true
+alert(tieneHijos);
+
+
+// Crea una variable llamada "salario" y  solicita un salario actual como valor. A continuación, escribe una línea de código que calcule el salario anual multiplicando el salario mensual por 12 y muestre el resultado en una alerta.
+let salario = prompt('Ingrese su salario actual')
+salario = salario * 12
+alert('Su salario anual es de : $' + salario)
+
+
+3)
+let edad = 20
+if(edad >= 18){
+    console.log("Eres mayor de edad")
+}
+else{
+    alert("Eres menor de edad")
+}
+*/
+
+
+
+/* 
+OPCIONAL:
+
+16.De un empleado se sabe su sueldo y los años de antigüedad. el sector de contabilidad nos pide hacer un programa que lea los datos y nos muestre.
+
+1)	Si el sueldo es inferior a 500 y su antigüedad es igual o superior a 10 años, otorgarle un aumento del 20 %, mostrar el sueldo a pagar.
+
+2)	Si el sueldo es inferior a 500 pero su antigüedad es menor a 10 años, otorgarle un aumento de 5 %.
+
+3)	Si el sueldo es mayor o igual a 500 mostrar el sueldo en la página sin cambios. 
+
+
+*/
+//OPCIONAL:
+
+/* let salario = 200
+let anios_antiguedad = 2
+if (salario < 500 && anios_antiguedad >= 10){
+    alert ('$ '+salario * 1.2)
+}
+else if (salario < 500 && anios_antiguedad < 10)
+{
+     alert ('$ '+salario * 1.05)
+}
+else 
+{
+    alert ('$ '+salario)
+}
+ */
+
+
+
+/* let salario = prompt('ingrese salario')
+let anios_antiguedad = 2
+
+if(salario < 500 ){
+    if(anios_antiguedad >= 10){
+
+    }
+    else{
+
+    }
+}
+else{
+    alert ('$ '+salario)
+} */
+
