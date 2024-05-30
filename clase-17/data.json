@@ -1,0 +1,10 @@
+[
+    {
+        "username": "pepe"
+    },
+    {
+        "username": "juan",
+        "edad": 19,
+        "estaCasado": false
+    }
+]
