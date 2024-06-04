@@ -1,0 +1,63 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <script src="./index.js" defer></script> -->
+    <style>
+        .mostrar{
+            background-color: red;
+        }
+        .modal-container{
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            background-color: rgba(0, 0, 0, 0.466);
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+        }
+        .modal-container .modal{
+            width: 300px;
+            height: 200px;
+            border-radius: 10px;
+            background-color: white;
+        }
+        .ocultar{
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="titulo"></h1>
+    <h2 id="subtitulo"></h2>
+    <div id="producto"></div>
+
+    <div id="userinfo"></div>
+    
+    <div id="products-container"></div>
+
+
+    <div class="lista" id="lista-historial">
+
+    </div>
+    <input id="input" value="pepe@gmail.com" class="input input-especial mostrar">
+    <div class="modal-container ocultar">
+        <div class="modal">
+            <div>
+                <button>cerrar</button>
+            </div>
+        </div>
+    </div>
+    <button id="btn-open">Abrir modal</button>
+    <script src="./index.js" ></script>
+</body>
+</html>
