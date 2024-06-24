@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de productos</title>
+</head>
+
+<body>
+    <form id="form-agregar-productos">
+        <div>
+            <label for="producto">Ingrese nombre del producto:</label>
+            <input type="text" name="producto" id="producto">
+            <span id="error-producto" class="errorText"></span>
+        </div>
+
+        <div>
+            <label for="precio">Ingrese su precio:</label>
+            <input type="number" name="precio" id="precio">
+            <span id="error-precio" class="errorText"></span>
+        </div>
+
+        <div>
+            <label for="descripcion">Descripcion del producto:</label><br>
+            <textarea name="descripcion" id="descripcion" cols="30" rows="10" placeholder="minimo 100 caracteres"></textarea>
+            <span id="error-descripcion" class="errorText"></span>
+        </div>
+    
+        <div>
+            <label for="stock">Stock:</label>
+            <input type="number" name="stock" id="stock">
+            <span id="error-stock" class="errorText"></span>
+        </div>
+
+        <div>
+            <label for="codigo">Codigo del producto:</label>
+            <input type="text" name="codigo" id="codigo">
+            <span id="error-codigo" class="errorText"></span>
+        </div>
+        <button type="submit">Agregar Producto</button>
+    </form> 
+
+    <script src="./tarea.js"></script>
+</body>
+</html>
