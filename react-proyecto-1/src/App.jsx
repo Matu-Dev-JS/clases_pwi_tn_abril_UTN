@@ -1,5 +1,5 @@
 import React from 'react'
-import {PI, doSomething, Titulos} from './funciones'
+import {PI, doSomething, Titulos} from './funciones.jsx'
 import { Carrito } from './Components/Carrito/Carrito'
 
 console.log(PI)
@@ -14,6 +14,7 @@ const App = () => {
             <ProductCard />
             <ProductCard />
             <Carrito/>
+            
         </div>
     )
 }
@@ -60,3 +61,79 @@ Se debe renderizar 3 items en el carrito
 Mostrar el Carrito en el componente App
 
 */
+
+/* Esto es un error, no se puede hacer componentes que retornen multiples elementos, solo pueden retornar un elemento */
+/* const ContactPage = () => {
+    return (
+        <h1>Formulario de contacto</h1>
+        <ContactForm/>
+    )
+} */
+
+/* 
+Queremos que h1 y ContactForm tengan un padre contenedor en comun, por ejemplo un <main></main> o un <div></div>? 
+*/
+
+/* SI la respuesta es SI */
+/* const ContactPage = () => {
+    return (
+        <main>
+            <h1>Formulario de contacto</h1>
+            <ContactForm/>
+        </main>
+    )
+} */
+
+
+/* SI la respuesta es NO */
+
+const ContactPage = () => {
+    return (
+        <>
+            <h1>Formulario de contacto</h1>
+            <ContactForm/>
+        </>
+    )
+}
+
+
+const Pages = () => {
+    return (
+
+        <main>
+            <ContactPage/>
+        </main>
+    )
+}
+
+/* 
+html:
+<main>
+    <h1></h1>
+    <form></form>
+
+</main>
+*/
+
+/* El html resultante de Pages es:
+<section>
+    <h1></h1>
+    <form></form>
+</section>
+
+*/
+
+
+
+
+const ListItem = () => {
+    return (
+        <li>
+            {/* Pone el codigo que quieras */}
+            <h2></h2>
+            <ContactPage/>
+        </li>
+
+    )
+}
+

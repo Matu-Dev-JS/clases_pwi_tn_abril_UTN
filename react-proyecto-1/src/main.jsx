@@ -10,8 +10,13 @@ Los componentes son funciones que retornan JSX (JSX es un codigo muy parecido a 
 */
 import App from './App.jsx'
 
-ReactDOM.createRoot(document.getElementById('root')).render(
-  <App />
-)
 
+
+ReactDOM.createRoot(document.getElementById('root')).render(
+  <>
+  <App />
+
+  </>
+  
+)
 

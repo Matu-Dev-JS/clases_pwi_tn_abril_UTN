@@ -4,3 +4,5 @@ const obtenerFechaHoy = () =>{
     const fecha = new Date()
     return fecha.getFullYear()
 }
+
+export {obtenerFechaHoy}

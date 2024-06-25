@@ -1,6 +1,7 @@
 import React from "react"
 
 const PI = 3.14
+
 const doSomething = () =>{
     alert("algo")
 }
