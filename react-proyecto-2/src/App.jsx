@@ -1,14 +1,16 @@
-import React from 'react'
+import React, {useState} from 'react'
 import { ProfileCard } from './ProfileCard'
 import { ColorCardList } from './Components/ColorCardList/ColorCardList'
 import { ColorItemList } from './Components/ColorCard/ColorCard'
+import Contador from './Components/Contador/Contador'
+import NewColorCardForm from './Components/NewColorCardForm/NewColorCardForm'
 
 
 
 let nombre = 'pepe'
 const obtenerNombre = () => 'pepe'
 
-
+/* its a band */
 const colors_card_info = [
     {
         likes: 9,
@@ -53,6 +55,8 @@ const App = () => {
         ubicacion: 'Av Scal 123'
     }
 
+
+
     /* const personas = ['pepe', 'juan', 'maria']
     const listaJSXPersonas = personas.map((persona) => {
         return (
@@ -60,6 +64,33 @@ const App = () => {
         )
     }) */
 
+    /* NO usar a document almenos que sea ESTRICTAMENTE NECESARIO */
+    //Usamos useState() para crear un estado
+    /* const [valor, fnCambiadora] = useState(10)
+
+    const incrementar = () => {
+        fnCambiadora(valor + 1)
+    } */
+    const [colorCardInfoList, setColorCardInfoList] = useState(colors_card_info)
+
+
+    console.log('me cargo')
+
+
+    const handleSubmitNewColorCard = (e) => {
+        e.preventDefault()
+        const newColorCard = {
+            colores: [],
+            likes: 0,
+            fecha: e.target.fecha.value,
+            id: 7
+        }
+        for(let i = 1 ; i <= 4; i = i + 1){
+            newColorCard.colores.push(e.target['color-' + i].value)
+        }
+        setColorCardInfoList([...colorCardInfoList, newColorCard])
+        
+    }
     return (
         <div>
             <ProfileCard
@@ -68,13 +99,47 @@ const App = () => {
             <ProfileCard
                 persona={persona_2}
             />
-            <ColorCardList colors_info={colors_card_info} limit={2}/>
-
+            <ColorCardList colors_info={colorCardInfoList} />
+            <NewColorCardForm handleSubmitNewColorCard={handleSubmitNewColorCard}/>
             <img />
-           
+            <Contador limit={10}/>
         </div>
     )
 }
 
 export default App
+
+/* 
+De aca se pone dificil
+props.children
+EVENTOS y ESTADOS
+React Router dom
+EFECTOS Y CONTEXTO
+
+*/
+
+
+/* 
+1er ejercicio
+Crear un componente contador que renderize:
+
+boton de decrementar
+span con valor de contador
+boton de incrementar
+
+2da parte
+El decrementar no debe bajar a menos de 1
+
+3era parte
+El incrementar debera estar limitado por una prop llamada limit que recibira el contador
+
+
+<Contador limit={10}/>
+*/
+
+
+/* 
+Tarea:
+Agregar a la aplicacion de chat la funcionalidad de escribir nuevos mensajes
+*/
 

@@ -59,7 +59,7 @@ function login() {
 
 
 /* function renderizarHistorial (historialRecibido){
-
+    
     let listaStrHistorial = ''
     for (const item of historialRecibido){
 

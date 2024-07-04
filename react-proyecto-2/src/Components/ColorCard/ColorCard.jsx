@@ -1,4 +1,5 @@
 import React from "react"
+import './ColorCard.css'
 
 /* props = {tarjeta: {objeto tarjeta}} */
 export const ColorCard = ({ tarjeta}) => {
