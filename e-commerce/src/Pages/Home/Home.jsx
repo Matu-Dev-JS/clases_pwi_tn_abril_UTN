@@ -62,6 +62,7 @@ const Home = () => {
     return (
         <div>
             <Navbar/>
+            <img src='/auto.avif' alt="" />
             <h1>Lista de productos</h1>
             {isWritting && <h2>Escribiendo...</h2>}
             <input 
